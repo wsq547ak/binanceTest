@@ -1,0 +1,104 @@
+
+.container {
+  width: 80%;
+  background-color: white;
+  margin: 30px auto;
+  .tabs {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    position: static;
+    top: 0;
+    left: 0;
+    .tab {
+      padding: 0 13px;
+      height: 34px;
+      font-size: 14px;
+      line-height: 34px;
+      font-weight: bold;
+      text-align: center;
+      color: rgb(102, 102, 102);
+      border-color: rgb(230, 230, 230);
+      border-top-style: solid;
+      border-left-style: solid;
+      border-width: 1px;
+      background-color: rgb(249, 249, 249);
+    }
+    .tab:last-child {
+      border-right-style: solid;
+    }
+    .select {
+      color: rgb(245, 188, 0);
+      background-color: white;
+      border-bottom-color: white;
+      border-bottom-style: solid;
+    }
+  }
+  .topTabs {
+    width: 80%;
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    .tab {
+      padding: 0 13px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 50px;
+      font-weight: bold;
+      text-align: center;
+      color: rgb(102, 102, 102);
+    }
+    .select {
+      color: rgb(245, 188, 0);
+    }
+  }
+  .productList {
+    width: 100%;
+    .item {
+      &:hover {
+        // box-shadow:0px 0px 5px #999 inset;
+        background-color: rgb(255, 243, 227);
+      }
+      width: 100%;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+      box-sizing: border-box;
+      border-bottom: 0.5px solid rgb(240, 240, 240);
+      padding: 0 20px;
+      display: flex;
+      cursor: pointer;
+      .name {
+        flex: 1;
+        text-align: left;
+      }
+      .fullName {
+        flex: 1;
+        text-align: left;
+      }
+      .price {
+        flex: 1;
+        text-align: right;
+      }
+      .low {
+        flex: 1;
+        text-align: right;
+      }
+      .high {
+        flex: 1;
+        text-align: right;
+      }
+      .volumn {
+        flex: 1;
+        text-align: right;
+      }
+      &:first-child {
+        border-top: 0.5px solid rgb(240, 240, 240);
+      }
+    }
+  }
+}

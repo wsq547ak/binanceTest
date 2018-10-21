@@ -1,0 +1,122 @@
+
+.container {
+  width: 80%;
+  background-color: white;
+  margin: 30px auto;
+  .tools {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .connectBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .orderList {
+    width: 280px;
+    user-select: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-image: initial;
+    padding: 0px;
+    margin: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .banner {
+      width: 278px;
+      display: flex;
+      font-size: 12px;
+      color: #999;
+      font-family: Arial,Microsoft YaHei,sans-serif!important;
+      font-weight: normal;
+    }
+    .currentPrice {
+      width: 100%;
+      height: 30px;
+      background-color: rgb(247, 247, 247);
+    }
+    .asks, .bids {
+      box-sizing: border-box;
+      direction: ltr;
+      height: 344px;
+      position: relative;
+      width: 278px;
+      overflow: hidden;
+      direction: ltr;
+      .list {
+        width: 278px;
+        overflow: hidden;
+        position: absolute;
+        .item {
+          width: 100%;
+          height: 20px;
+          display: flex;
+          font-family: Arial,Microsoft YaHei,sans-serif!important;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 20px;
+          position: relative;
+          margin-bottom: 1px;
+          .num:hover {
+            font-weight: 700;
+          }
+          .askBack {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            height: 100%;
+            background-color: rgba(202, 44, 120, 0.1);
+          }
+          .bidBack {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            height: 100%;
+            background-color: rgba(115, 201, 33, 0.1);
+          }
+        }
+      }
+    }
+    .asks .list {
+      bottom: 0;
+      left: 0;
+    }
+    .bids .list {
+      top: 0;
+      left: 0;
+    }
+    .asks .list .item .num:nth-child(1) {
+      color: rgb(234, 0, 112);
+    }
+    .bids .list .item .num:nth-child(1) {
+      color: rgb(112, 168, 0);
+    }
+  }
+}
+.numFirst {
+  display: flex;
+  flex-basis: 40%;
+  flex-wrap: wrap;
+}
+
+.numSecond {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numThird {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
